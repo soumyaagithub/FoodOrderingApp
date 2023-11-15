@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/mediumgrey">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <EditText
+          android:id="@+id/editText3"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/search_bg"
+          android:drawableRight="@drawable/baseline_search_24"
+          android:drawablePadding="9dp"
+          android:fontFamily="@font/amita"
+          android:hint="Search your Food"
+          android:padding="10dp"
+          android:textColor="@color/white"
+          android:textColorHint="@color/white"
+          android:textSize="13sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.054"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/search_bg"
+          android:padding="10dp"
+          android:src="@drawable/baseline_person_24"
+          app:layout_constraintBottom_toBottomOf="@+id/editText3"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/editText3"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="4dp"
+          android:fontFamily="@font/amarante"
+          android:text="Hello All"
+          android:textColor="@color/white"
+          android:textSize="35sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/editText3"/>
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/amita"
+          android:text="What do you want ?"
+          android:textColor="@color/white"
+          android:layout_marginLeft="6dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/home_hor_rec"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="6dp"
+          android:layout_marginTop="204dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.333"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/home_ver_rec"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="6dp"
+          android:layout_marginTop="6dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/home_hor_rec" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
